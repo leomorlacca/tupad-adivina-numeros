@@ -42,7 +42,6 @@ while jugar == "si":
         # Pasamos al siguiente nivel
         nivel += 1
 
-
     # Indicamos la victoria y preguntamos si quiere volver a jugar.
     jugar = input(f"Ganaste, {nombre_jugador}! Superaste los 3 niveles! ¿Te gustaría volver a jugar? (si/no): ")
 
