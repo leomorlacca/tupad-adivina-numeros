@@ -11,8 +11,8 @@ while jugar == "si":
     nivel = 1
     while nivel <= 3:
         if nivel == 1:
-            # Generamos un número al azar entre 1 y 9
-            decimal = random.randint(1, 9)
+            # Generamos un número al azar entre 0 y 9
+            decimal = random.randint(0, 9)
         if nivel == 2:
             # Generamos un número al azar entre 10 y 20
             decimal = random.randint(10, 20)
@@ -27,8 +27,8 @@ while jugar == "si":
             binario = "0"
         else:
             while n > 0:
-                binario = str(n % 2) + binario
-                n //= 2
+                binario = str(n % 2) + binario # Concateno los restos y los almaceno en binario
+                n //= 2 # Es lo mismo que n = n // 2
 
         # Repetimos hasta que el jugador acierte
         while True:
